@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.example.accountingclerk.MainActivity" 
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/orange500"
+        android:gravity="center"
+        android:text="@string/welcome_registered_title"
+        android:textColor="@color/white" 
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/orange500"
+            android:textSize="20sp"
+             />
+
+        <EditText
+            android:id="@+id/Registered_edittext_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/user_tips" 
+            android:textSize="14sp"
+            android:textColorHint="@color/orange200_button_dw"
+            >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password" 
+            android:textColor="@color/orange500"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/Registered_edittext_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_tips"
+            android:inputType="textPassword" 
+            android:textSize="14sp"
+            android:textColorHint="@color/orange200_button_dw"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/Registered_button_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/button_registered" 
+            android:background="@drawable/orange_button_theme"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/Registered_button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/button_back"
+            android:background="@drawable/orange_button_theme"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+             />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/registered_test_tips" 
+        android:layout_marginBottom="10dp"
+		android:gravity="center|bottom"
+	        />
+
+</LinearLayout>

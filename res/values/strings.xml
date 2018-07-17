@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Simple记账本</string>
+    <string name="user">用户:</string>
+    <string name="password">密码:</string>
+    <string name="user_tips">请输入帐号</string>
+    <string name="password_tips">请输入密码</string>
+    <string name="welcome_login_title">欢迎登录\nSimple记账本</string>
+    <string name="welcome_registered_title">欢迎注册\nSimple记账本</string>
+    <string name="button_login">登录</string>
+    <string name="button_registered">注册</string>
+    <string name="button_back">返回</string>
+    <string name="interface_button_add">+</string>
+    <string name="interface_button_bcak">&lt;</string>
+    <string name="interface_monthly_budget_edittext">默认值:2000</string>
+	<string name="interface_add_item_name">项目名:</string>
+	<string name="interface_add_money">金额:</string>
+	<string name="interface_add_note">备注</string>
+	<string name="interface_add_note_tips">选填</string>
+	<string name="interface_add_button_add">添加</string>
+	<string name="interface_add_button_back">返回</string>
+	<string name="add_itemname_tips">请输入项目名称!</string>
+	<string name="interface_add_tips">记一笔</string>
+	<string name="registered_test_tips">测试数据\n请注册,用户名:11</string>
+	<string name="remember_userandpw">记住账户和密码</string>
+	<string name="pay">支出</string>
+	<string name="income">收入</string>
+	<string name="updatalog">更新日志</string>
+</resources>

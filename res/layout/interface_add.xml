@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/interface_add_tips" 
+        android:background="@color/blue500"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        >
+
+<RadioGroup
+    android:id="@+id/payorincome"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    
+    <RadioButton
+            android:id="@+id/add_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay" 
+            android:checked="true"
+            android:textColor="@color/blue500"
+            />
+
+        <RadioButton
+            android:id="@+id/add_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/income" />
+    
+</RadioGroup>
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            
+            android:text="@string/interface_add_item_name" 
+                  android:layout_height="40dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+	<Spinner
+	    android:id="@+id/interface_add_spinner"
+	    android:layout_width="0dp"
+	    android:layout_height="40dp"
+	    android:layout_weight="1"
+	    
+	    />
+
+	<Button
+	    android:id="@+id/interface_add_button_item_add"
+	    android:layout_width="30dp"
+	    android:layout_height="30dp"
+	    android:text="@string/interface_button_add" 
+	    android:background="@drawable/blue_button_theme"
+	    android:textColor="@color/white"
+	    android:layout_marginRight="10dp"
+	    />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/interface_add_money" 
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <EditText 
+            android:id="@+id/interface_add_money"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+			android:layout_weight="1"
+			android:inputType="number"
+			android:textSize="16sp"
+            />
+
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/interface_add_note" 
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <EditText 
+            android:id="@+id/interface_add_note"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+			android:layout_weight="1"
+			android:hint="@string/interface_add_note_tips"
+			android:textSize="16sp"
+			
+            />
+
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" 
+          android:layout_marginTop="10dp"
+          android:gravity="center"
+          >
+
+          <Button
+              android:id="@+id/interface_add_button_add"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/interface_add_button_add" 
+              android:background="@drawable/blue_button_theme"
+              android:textColor="@color/white"
+              />
+
+          <Button
+              android:id="@+id/interface_add_button_back"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/interface_add_button_back" 
+              android:background="@drawable/blue_button_theme"
+              android:textColor="@color/white"
+              android:layout_marginLeft="10dp"
+              />
+
+      </LinearLayout>
+
+</LinearLayout>

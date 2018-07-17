@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    
+    tools:context="com.example.accountingclerk.MainActivity" 
+    
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue500"
+        android:gravity="center"
+        android:text="@string/welcome_login_title"
+        android:textColor="@color/white" 
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/blue500"
+            android:textSize="20sp"
+            
+             />
+
+        <EditText
+            android:id="@+id/mainactivity_edittext_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/user_tips" 
+            android:textSize="14sp"
+            android:textColorHint="@color/blue200_button_dw"
+            >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password" 
+            android:textColor="@color/blue500"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/mainactivity_edittext_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_tips"
+            android:inputType="textPassword" 
+            android:textSize="14sp"
+            android:textColorHint="@color/blue200_button_dw"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        >
+
+        <CheckBox
+            android:id="@+id/mainactivity_check_remuserpw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_userandpw" 
+            android:textColor="@color/blue500"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/mainactivity_button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/button_login" 
+            android:background="@drawable/blue_button_theme"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:id="@+id/mainactivity_button_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/button_registered"
+            android:background="@drawable/blue_button_theme"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:textSize="16sp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+           <TextView
+        android:id="@+id/updatalogtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/updatalog" 
+        android:layout_gravity="center|bottom"
+        android:textColor="@color/blue500"
+        android:gravity="center"
+        />
+    </LinearLayout>
+
+ 
+
+</LinearLayout>
